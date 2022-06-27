@@ -1,0 +1,11 @@
+name: LocalChat
+version: '${project.version}'
+main: ru.niron3206.localchat.LocalChat
+api-version: 1.16
+authors: [Niron3206]
+description: Plugin that adds local chat.
+softdepend: [PlaceholderAPI]
+commands:
+    localchat:
+        description: Reload the plugin.
+        usage: /localchat reload

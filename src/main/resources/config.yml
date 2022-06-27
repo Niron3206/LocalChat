@@ -1,0 +1,18 @@
+#Enables plugin if it's true. Default: true
+Enabled: true
+
+#The distance of local chat. Default: 200
+LocalDistance: 200
+
+#Prefix to send message in global chat. Default: "!"
+Prefix: "!"
+
+#Prefix that shows in GLOBAL chat before player's nickname/rank. Default: "&6[G]"
+GlobalChatPrefix: "&6[G]"
+
+#Prefix that shows in LOCAL chat before player's nickname/rank. Default: "[L]"
+LocalChatPrefix: "[L]"
+
+#Enables PlaceHolderAPI support if it's true. Default: false
+#If it's not, it'll use custom chat style with chat prefix before the player's nickname.
+PlaceHolderAPIEnabled: false
