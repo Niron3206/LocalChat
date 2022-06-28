@@ -1,6 +1,6 @@
 
 ![LocalChat](https://media.discordapp.net/attachments/695563421491396728/991137675815952404/LocalChat.png)
-#LocalChat
+<h2>LocalChat</h2>
 
 ![Downloads](https://img.shields.io/github/downloads/Niron3206/LocalChat/v1.0/total?style=flat-square)
 
@@ -8,22 +8,22 @@
 
 Minecraft versions: 1.16-1.19
 
-##Attention
+<h2>Attention</h2>
 
 **PLUGIN USES PAPER API, SO MAKE SURE THAT YOUR CORE SUPPORTS PAPER PLUGINS** 
 
-##Dependencies
+<h2>Dependencies</h2>
 
 Paper API\
 PlaceholderAPI
 
-##Installation
+<h2>Installation</h2>
 
 1. Move LocalChat.jar into the /plugin folder. **(Make sure, you have PlaceHolderAPI in your /plugin folder)**
 2. Restart Paper.
 3. (Optional) Edit the /plugins/LocalChat/config.yml and reload plugin with "/localchat reload" command.
 
-##Commands and Permissions
+<h2>Commands and Permissions</h2>
 
 <table>
     <tbody>
