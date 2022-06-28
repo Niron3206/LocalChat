@@ -2,6 +2,7 @@
 ![LocalChat](https://media.discordapp.net/attachments/695563421491396728/991137675815952404/LocalChat.png)
 
 <h2>Screenshots</h2>
+
 **Example of local chat:**\
 ![ExampleOfLocalChat](https://media.discordapp.net/attachments/695563421491396728/991416773591179274/ExampleOfLocalChat.png)
 
