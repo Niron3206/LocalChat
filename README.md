@@ -1,8 +1,16 @@
 
 ![LocalChat](https://media.discordapp.net/attachments/695563421491396728/991137675815952404/LocalChat.png)
+
+<h2>Screenshots</h2>
+**Example of local chat:**\
+![ExampleOfLocalChat](https://media.discordapp.net/attachments/695563421491396728/991416773591179274/ExampleOfLocalChat.png)
+
+**Example of global chat:**\
+![ExampleOfGlobalChat](https://media.discordapp.net/attachments/695563421491396728/991416779597422662/ExampleOfGlobalChat.png)
+
 <h2>LocalChat</h2>
 
-![Downloads](https://img.shields.io/github/downloads/Niron3206/LocalChat/v1.0/total?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/Niron3206/LocalChat/v1.1/total?style=flat-square)
 
 **Minecraft plugin that adds local chat to your server, based on paper api.**
 
@@ -40,4 +48,19 @@ PlaceholderAPI
     </tbody>
 </table>
 
-<a href="https://github.com/Niron3206/LocalChat/releases/tag/v1.0">Download plugin here</a>
+<h2>PlaceHolder's Expansions</h2>
+
+<table>
+    <tbody>
+        <tr>
+			<td> <h6>Expansion</h6> </td>
+			<td> <h6>Function</h6> </td>
+		</tr>
+        <tr>
+			<td> <h6>%localchat_chatprefix%</h6> </td>
+			<td> <h6>shows localchat or globalchat prefix (use it if you have plugin for custom chat format)</h6> </td>
+		</tr>
+    </tbody>
+</table>
+
+<a href="https://github.com/Niron3206/LocalChat/releases/tag/v1.1">Download plugin here</a>

@@ -14,5 +14,4 @@ GlobalChatPrefix: "&6[G]"
 LocalChatPrefix: "[L]"
 
 #Enables PlaceHolderAPI support if it's true. Default: false
-#If it's not, it'll use custom chat style with chat prefix before the player's nickname.
 PlaceHolderAPIEnabled: false

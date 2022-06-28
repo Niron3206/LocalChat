@@ -1,7 +1,6 @@
 package ru.niron3206.localchat;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
-import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.ChatColor;
@@ -15,7 +14,7 @@ import static org.bukkit.Bukkit.getOnlinePlayers;
 public class ChatEvent implements Listener {
 
     private final LocalChat plugin;
-    private static String prefix;
+    private static String chatPrefix;
 
     public ChatEvent(LocalChat plugin) {
         this.plugin = plugin;
@@ -29,26 +28,31 @@ public class ChatEvent implements Listener {
         if(isEnabled()) {
             if(!hasPrefix(message)) {
                 for (Player player : getOnlinePlayers()) {
-                    if (isInTheSameWorld(sender, player) && inRange(getDistance(sender.getLocation(), player.getLocation()))) {
-                        continue;
-                    } else {
+                    if (!isInTheSameWorld(sender, player)) {
                         event.viewers().remove(player);
+                    } else {
+                        if (!inRange(getDistance(sender.getLocation(), player.getLocation()))) {
+                            event.viewers().remove(player);
+                        }
                     }
                 }
-                setPrefix(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("LocalChatPrefix")));
+                setChatPrefix(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("LocalChatPrefix")));
             } else {
-                setPrefix(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("GlobalChatPrefix")));
+                setChatPrefix(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("GlobalChatPrefix")));
+                if(message.length() != 1) {
+                    message = message.replaceFirst(plugin.getConfig().getString("Prefix"), "");
+                }
             }
 
             if(!isPlaceHolderAPIEnabled()) {
+                String finalMessage = message;
                 event.renderer((source, sourceDisplayName, messageComponent, viewer) ->
                         Component.text()
-                                .append(Component.text(ChatEvent.getPrefix() + " "))
+                                .append(Component.text(ChatEvent.getChatPrefix() + " "))
                                 .append(event.getPlayer().displayName())
                                 .append(Component.text(" > "))
-                                .append(messageComponent)
+                                .append(Component.text(finalMessage))
                                 .build());
-
             }
         }
     }
@@ -61,11 +65,11 @@ public class ChatEvent implements Listener {
         return distance < plugin.getConfig().getInt("LocalDistance");
     }
 
-    public static String getPrefix() {
-        return prefix;
+    public static String getChatPrefix() {
+        return chatPrefix;
     }
-    public static void setPrefix(String prefix) {
-        ChatEvent.prefix = prefix;
+    public static void setChatPrefix(String chatPrefix) {
+        ChatEvent.chatPrefix = chatPrefix;
     }
 
     private boolean isEnabled() {

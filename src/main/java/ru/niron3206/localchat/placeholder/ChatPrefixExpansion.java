@@ -37,7 +37,7 @@ public class ChatPrefixExpansion extends PlaceholderExpansion {
             return "";
         }
         if (params.equals("chatprefix")) {
-            return ChatEvent.getPrefix();
+            return ChatEvent.getChatPrefix();
         }
         return null;
     }
