@@ -15,7 +15,7 @@
 
 **Minecraft plugin that adds local chat to your server, based on paper api.**
 
-Minecraft versions: 1.17-1.19
+Minecraft versions: 1.17-1.19.1
 
 <h2>Attention</h2>
 
