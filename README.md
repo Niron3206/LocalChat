@@ -1,13 +1,13 @@
 
-![LocalChat](https://media.discordapp.net/attachments/695563421491396728/991137675815952404/LocalChat.png)
+![LocalChat](https://github.com/Niron3206/LocalChat/raw/master/LocalChat.png)
 
 <h2>Screenshots</h2>
 
 **Example of local chat:**\
-![ExampleOfLocalChat](https://media.discordapp.net/attachments/695563421491396728/991416773591179274/ExampleOfLocalChat.png)
+![ExampleOfLocalChat](https://github.com/Niron3206/LocalChat/raw/master/ExampleOfLocalChat.png)
 
 **Example of global chat:**\
-![ExampleOfGlobalChat](https://media.discordapp.net/attachments/695563421491396728/991416779597422662/ExampleOfGlobalChat.png)
+![ExampleOfGlobalChat](https://github.com/Niron3206/LocalChat/raw/master/ExampleOfGlobalChat.png)
 
 <h2>LocalChat</h2>
 
